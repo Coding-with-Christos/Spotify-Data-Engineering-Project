@@ -52,7 +52,7 @@ The solution implements a strict **Medallion Lakehouse Architecture**:
 ## 📁 Repository Structure
 
 ```text
-📦 Spotify-Data-Engineering-Lakehouse
+📦 Spotify-Data-Engineering-Project
  ┣ 📂 bronze/                 # Raw data ingestion notebook
  ┣ 📂 analysis/               # Exploratory Data Analysis & Data Quality Report
  ┣ 📂 silver/                 # Data cleansing & window-based deduplication notebook
