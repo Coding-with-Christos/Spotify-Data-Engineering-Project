@@ -47,7 +47,13 @@ The solution implements a strict **Medallion Lakehouse Architecture**:
   * **Fact Table (`fact_spotify`):** Stores track analytical metrics (popularity, duration, explicit flags, keys).
 
 ### 🤖 Orchestration (Databricks Jobs)
-* **Automation:** Configured an automated DAG workflow (`SpotifyAppJob`) linking Bronze ingestion, Silver cleansing, and Gold modeling sequentially to ensure seamless execution.
+We automated the end-to-end execution of the pipeline using Databricks Jobs, ensuring sequential task processing from ingestion to modeling.
+
+**Pipeline DAG Workflow:**
+![Pipeline Tasks](jobs/images/job_pipeline_tasks.png)
+
+**Execution History:**
+![Run History](jobs/images/job_pipeline_runs.png)
 
 ## 📁 Repository Structure
 
